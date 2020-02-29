@@ -1,0 +1,28 @@
+  version: '3.7'
+
+  services:
+
+    postgres:
+      image: postgres
+      restart: always
+      container_name: postgres
+      ports:
+        - 5432:5432
+      environment:
+        POSTGRES_USER: postgres
+        POSTGRES_PASSWORD: postgres
+        POSTGRES_DB: Internet-Shop
+        POSTGRES_listen_addresses: localhost
+
+
+    springbootapp:
+      build: ./
+      image: spring
+      container_name: springapp
+      restart: always
+      links:
+        - postgres
+      depends_on:
+        - postgres
+      ports:
+        - 8585:8585

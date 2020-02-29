@@ -1,0 +1,9 @@
+com\larionov\epam\service\ProductServiceImpl.class
+com\larionov\epam\Main.class
+com\larionov\epam\mapper\ProductMapper.class
+com\larionov\epam\controller\ControllerProduct.class
+com\larionov\epam\item\Product$ProductBuilder.class
+com\larionov\epam\service\ProductService.class
+com\larionov\epam\dao\ProductDAO.class
+com\larionov\epam\dao\ProductDAOImpl.class
+com\larionov\epam\item\Product.class
